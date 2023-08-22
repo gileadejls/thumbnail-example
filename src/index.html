@@ -3,45 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../dist/style.css">
     <title>Shoes Examples</title>
 </head>
 <body class="bg-zinc-950">
-    <div class="w-screen h-screen flex items-center justify-center">
-        <div class="md:flex md:gap-6">
+    <div class="w-full h-full flex items-center justify-center">
+
+        <!-- Div contendo tudo -->
+        <div class="flex flex-col md:flex-row  md:max-w-4xl ">
             <!-- PRIMEIRO CARD -->
-            <div class="text-center flex flex-col justify-center items-center md:w-full md:h-full w-screen h-screen">
-                <div style="width: 250px; height: 400px;" class="rounded-xl  bg-white brightness-50 opacity-40 hover:opacity-100 duration-300 hover:brightness-100 blur-sm hover:mx-8 hover:blur-0 hover:scale-x-105 transition-all">
-                    <div style="background-image: url('./assets/images/removed1.png');" class="w-full h-full bg-contain bg-no-repeat bg-center rounded-xl hover:scale-150 transition-all"></div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="w-screen h-screen flex flex-col items-center justify-center">
+                <!-- IMAGEM-->
+                <div style="width: 240px; height: 400px;" class=" bg-amber-200 rounded-lg brightness-50 opacity-40 blur-sm hover:blur-0 hover:opacity-100 hover:brightness-100 hover:scale-x-105 duration-300 transition-all md:hover:mx-10">
+                    <div style="background-image: url('./assets/images/removed1.png');" class="w-full h-full bg-contain bg-no-repeat bg-center hover:scale-150 transition-all duration-300"></div>
                 </div>
-                <div class="w-60 text-center">
-                    <h2 class="text-gray-300 font-semibold text-xl pt-8">Nike Zoom Osaka PRM</h2>
-                    <p class="text-gray-200 text-sm ">Tênis Nike Zoom Osaka PRM Feminino</p>
+                <!-- TEXTO DO CARD-->
+                <div class="text-center  w-60">
+                    <h2 class="text-gray-300 font-semibold text-2xl pt-8 md:text-3xl mb-1">Zoom Osaka </h2>
+                    <p class="text-gray-400 text-xl">Tênis Nike Zoom Osaka PRM</p>
                 </div>
             </div>
 
             <!-- SEGUNDO CARD -->
-            <div class="text-center flex flex-col justify-center items-center">
-                <div style="width: 250px; height: 400px;" class="rounded-xl  bg-white brightness-50 opacity-40 hover:opacity-100 duration-300 hover:brightness-100 blur-sm hover:mx-8 hover:blur-0 hover:scale-x-105 transition-all">
-                    <div style="background-image: url('./assets/images/removed2.png');" class="w-full h-full bg-contain bg-no-repeat bg-center rounded-xl hover:scale-150 transition-all"></div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="w-screen h-screen flex flex-col items-center justify-center">
+                <!-- IMAGEM-->
+                <div style="width: 240px; height: 400px;" class="bg-amber-200 rounded-lg brightness-50 opacity-40 blur-sm hover:blur-0 hover:opacity-100 hover:brightness-100 hover:scale-x-105 duration-300 transition-all md:hover:mx-10">
+                    <div style="background-image: url('./assets/images/removed2.png');" class="w-full h-full bg-contain bg-no-repeat bg-center hover:scale-150 transition-all duration-300"></div>
                 </div>
-                <div class="w-60 text-center">
-                    <h2 class="text-gray-300 font-semibold text-xl pt-8">Tenis Nike Air Force 1</h2>
-                    <p class="text-gray-200 text-sm ">Tênis Air Force 1 '07 SE Feminino</p>
+                <!-- TEXTO DO CARD-->
+                <div class="text-center  w-60">
+                    <h2 class="text-gray-300 font-semibold text-2xl pt-8 md:text-3xl mb-1">Tênis Air Force 1</h2>
+                    <p class="text-gray-400 text-xl">Tênis Air Force 1 '07 SE Feminino</p>
                 </div>
             </div>
-            <!-- NikeCourt Air Zoom  / Tênis NikeCourt Air Zoom Vapor 11 Masculino -->
+
             <!-- TERCEIRO CARD -->
-            <div class="text-center flex flex-col justify-center items-center">
-                <div style="width: 250px; height: 400px;" class="rounded-xl  bg-white brightness-50 opacity-40 hover:opacity-100 duration-300 hover:brightness-100 blur-sm hover:mx-8 hover:blur-0 hover:scale-x-105 transition-all">
-                    <div style="background-image: url('./assets/images/removed3.png');" class="w-full h-full bg-contain bg-no-repeat bg-center rounded-xl hover:scale-150 transition-all"></div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="w-screen h-screen flex flex-col items-center justify-center">
+                <!-- IMAGEM-->
+                <div style="width: 240px; height: 400px;" class="bg-amber-200 rounded-lg brightness-50 opacity-40 blur-sm hover:blur-0 hover:opacity-100 hover:brightness-100 hover:scale-x-105 duration-300 transition-all md:hover:mx-10">
+                    <div style="background-image: url('./assets/images/removed3.png');" class="w-full h-full bg-contain bg-no-repeat bg-center hover:scale-150 transition-all duration-300"></div>
                 </div>
-                <div class="w-60 text-center">
-                    <h2 class="text-gray-300 font-semibold text-xl pt-8">NikeCourt Air Zoom</h2>
-                    <p class="text-gray-200 text-sm ">Tênis NikeCourt Air Zoom Vapor 11 </p>
+                <!-- TEXTO DO CARD-->
+                <div class="text-center  w-60">
+                    <h2 class="text-gray-300 font-semibold text-2xl pt-8 md:text-3xl mb-1">Court Air Zoom</h2>
+                    <p class="text-gray-400 text-xl">Tênis NikeCourt Air Zoom Vapor 11 Masculino</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
